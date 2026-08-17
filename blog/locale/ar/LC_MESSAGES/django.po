@@ -1,0 +1,42 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-12 22:07+0300\n"
+"PO-Revision-Date: 2026-08-12 22:30+0300\n"
+"Last-Translator: \n"
+"Language-Team: Arabic\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: .\blog\templates\blog\blog\_list.html:5
+msgid "Blog | Academy"
+msgstr "المدونة | أكاديمية"
+
+#: .\blog\templates\blog\blog\_list.html:17
+msgid "Academy Blog"
+msgstr "مدونة أكاديمية"
+
+#: .\blog\templates\blog\blog\_list.html:21
+msgid "Discover useful articles, tutorials, and programming tips."
+msgstr "اكتشف مقالات مفيدة وشروحات ونصائح في البرمجة."
+
+#: .\blog\templates\blog\blog\_list.html:89
+msgid "Read More"
+msgstr "اقرأ المزيد"
+
+#: .\blog\templates\blog\blog\_list.html:122
+msgid "No blog posts available yet."
+msgstr "لا توجد مقالات في المدونة حاليًا."
+
+#: .\blog\templates\blog\show\_blog.html:84
+msgid "Back to Blog"
+msgstr "العودة إلى المدونة"

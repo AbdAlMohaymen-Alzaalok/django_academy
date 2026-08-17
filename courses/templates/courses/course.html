@@ -1,0 +1,61 @@
+{% extends 'courses/base.html' %}
+{% load i18n %}
+
+{% block title %}
+    {{ course.title }} | Academy
+{% endblock %}
+
+{% block content %}
+
+<!-- Course Header -->
+<div class="mb-4">
+
+    <h1 class="fw-bold">
+        {{ course.title }}
+    </h1>
+
+    <p class="text-muted">
+        {{ course.description }}
+    </p>
+
+</div>
+
+
+<!-- Course Video -->
+<div class="card border-0 shadow-sm">
+
+    <div class="card-body p-2">
+
+        {% if course.video %}
+
+            <video
+                class="w-100 rounded"
+                controls
+                style="max-height: 600px; background: #000;"
+            >
+
+                <source
+                    src="{{ course.video.url }}"
+                    type="video/mp4"
+                >
+
+                {% translate "Your browser does not support the video tag." %}
+
+            </video>
+
+        {% else %}
+
+            <div class="alert alert-warning text-center m-3">
+
+                {% translate "No video available for this course." %}
+
+            </div>
+
+        {% endif %}
+
+    </div>
+
+</div>
+{% include 'courses/comment.html' %}
+
+{% endblock %}

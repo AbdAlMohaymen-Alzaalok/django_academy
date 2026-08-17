@@ -1,0 +1,142 @@
+{% extends 'courses/base.html' %}
+{% load i18n %}
+
+{% block title %}
+    {% translate "Payment Completed | Academy" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+
+    <div class="col-12 col-md-8 col-lg-6">
+
+        <div class="card border-0 shadow-sm text-center">
+
+            <div class="card-body p-5">
+
+
+                <!-- Success Icon -->
+
+                <div
+                    class="bg-success bg-opacity-10 text-success
+                           rounded-circle d-inline-flex
+                           align-items-center justify-content-center mb-4"
+                    style="width: 90px; height: 90px;"
+                >
+
+                    <i class="bi bi-check-circle-fill fs-1"></i>
+
+                </div>
+
+
+                <!-- Title -->
+
+                <h2 class="fw-bold mb-2">
+
+                    {% translate "Payment Completed" %}
+
+                </h2>
+
+
+                <p class="text-muted mb-4">
+
+                    {% translate "Your payment was completed successfully!" %}
+
+                    <br>
+
+                    {% translate "You can now access your course." %}
+
+                </p>
+
+
+                <!-- Order Information -->
+
+                <div class="bg-light rounded p-4 text-start mb-4">
+
+
+                    <div class="d-flex justify-content-between mb-3">
+
+                        <span class="text-muted">
+
+                            {% translate "Student" %}
+
+                        </span>
+
+                        <strong>
+                            {{ user.username }}
+                        </strong>
+
+                    </div>
+
+
+                    <div class="d-flex justify-content-between mb-3">
+
+                        <span class="text-muted">
+
+                            {% translate "Course" %}
+
+                        </span>
+
+                        <strong>
+                            {{ course.title }}
+                        </strong>
+
+                    </div>
+
+
+                    <div class="d-flex justify-content-between">
+
+                        <span class="text-muted">
+
+                            {% translate "Price" %}
+
+                        </span>
+
+                        <strong class="text-success">
+
+                            ${{ course.price }}
+
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Course Button -->
+
+                <a
+                    href="{% url 'course' course.id %}"
+                    class="btn btn-success w-100 py-2"
+                >
+
+                    <i class="bi bi-play-circle me-2"></i>
+
+                    {% translate "Start Course" %}
+
+                </a>
+
+
+                <!-- Back -->
+
+                <a
+                    href="{% url 'index' %}"
+                    class="btn btn-outline-secondary w-100 mt-2"
+                >
+
+                    <i class="bi bi-arrow-left me-2"></i>
+
+                    {% translate "Back to Courses" %}
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

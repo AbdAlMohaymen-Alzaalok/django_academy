@@ -1,0 +1,109 @@
+{% extends 'courses/base.html' %}
+{% load i18n %}
+
+{% block title %}
+    {% translate "Payment Failed | Academy" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+
+    <div class="col-12 col-md-8 col-lg-6">
+
+        <div class="card border-0 shadow-sm text-center">
+
+            <div class="card-body p-5">
+
+
+                <!-- Error Icon -->
+
+                <div
+                    class="bg-danger bg-opacity-10 text-danger
+                           rounded-circle d-inline-flex
+                           align-items-center justify-content-center mb-4"
+                    style="width: 90px; height: 90px;"
+                >
+
+                    <i class="bi bi-x-circle-fill fs-1"></i>
+
+                </div>
+
+
+                <!-- Title -->
+
+                <h2 class="fw-bold mb-3">
+
+                    {% translate "Payment Failed" %}
+
+                </h2>
+
+
+                <!-- Message -->
+
+                <p class="text-muted mb-4">
+
+                    {% translate "Unfortunately, your payment could not be completed." %}
+
+                    <br>
+
+                    {% translate "Please try again." %}
+
+                </p>
+
+
+                <!-- Course -->
+
+                <div class="bg-light rounded p-3 mb-4">
+
+                    <div class="small text-muted mb-1">
+
+                        {% translate "Course" %}
+
+                    </div>
+
+                    <div class="fw-semibold">
+
+                        {{ course.title }}
+
+                    </div>
+
+                </div>
+
+
+                <!-- Try Again -->
+
+                <a
+                    href="{% url 'checkout' course.id %}"
+                    class="btn btn-primary px-4"
+                >
+
+                    <i class="bi bi-arrow-repeat me-2"></i>
+
+                    {% translate "Try Again" %}
+
+                </a>
+
+
+                <!-- Back -->
+
+                <a
+                    href="{% url 'index' %}"
+                    class="btn btn-outline-secondary px-4 ms-2"
+                >
+
+                    <i class="bi bi-house me-2"></i>
+
+                    {% translate "Back to Courses" %}
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

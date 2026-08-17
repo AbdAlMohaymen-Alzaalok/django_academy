@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-12 22:07+0300\n"
+"PO-Revision-Date: 2026-08-12 22:30+0300\n"
+"Last-Translator: \n"
+"Language-Team: Arabic\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: .\accounts\forms.py:21 .\accounts\forms.py:41
+msgid "User Name"
+msgstr "اسم المستخدم"
+
+#: .\accounts\forms.py:22 .\accounts\forms.py:51
+msgid "Password"
+msgstr "كلمة المرور"
+
+#: .\accounts\forms.py:31 .\accounts\forms.py:92
+msgid "First Name"
+msgstr "الاسم الأول"
+
+#: .\accounts\forms.py:36 .\accounts\forms.py:93
+msgid "Last Name"
+msgstr "اسم العائلة"
+
+#: .\accounts\forms.py:46 .\accounts\forms.py:94
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#: .\accounts\forms.py:57
+msgid "Password Confirmation"
+msgstr "تأكيد كلمة المرور"
+
+#: .\accounts\templates\profile.html:5
+msgid "Profile | Academy"
+msgstr "الملف الشخصي | أكاديمية"
+
+#: .\accounts\templates\profile.html:35
+msgid "My Profile"
+msgstr "ملفي الشخصي"
+
+#: .\accounts\templates\profile.html:39
+msgid "Update your account information."
+msgstr "قم بتحديث معلومات حسابك."
+
+#: .\accounts\templates\profile.html:61
+msgid "Save Changes"
+msgstr "حفظ التغييرات"
+
+#: .\accounts\templates\registration\login.html:5
+msgid "Login | Academy"
+msgstr "تسجيل الدخول | أكاديمية"
+
+#: .\accounts\templates\registration\login.html:37
+msgid "Welcome Back"
+msgstr "مرحبًا بعودتك"
+
+#: .\accounts\templates\registration\login.html:44
+msgid "Login to continue learning with Academy"
+msgstr "سجّل الدخول لمتابعة التعلم مع أكاديمية"
+
+#: .\accounts\templates\registration\login.html:67
+#: .\accounts\templates\registration\register.html:89
+msgid "Login"
+msgstr "تسجيل الدخول"
+
+#: .\accounts\templates\registration\login.html:80
+msgid "Don't have an account?"
+msgstr "ليس لديك حساب؟"
+
+#: .\accounts\templates\registration\login.html:89
+msgid "Create account"
+msgstr "إنشاء حساب"
+
+#: .\accounts\templates\registration\register.html:5
+msgid "Register | Academy"
+msgstr "التسجيل | أكاديمية"
+
+#: .\accounts\templates\registration\register.html:37
+#: .\accounts\templates\registration\register.html:67
+msgid "Create Account"
+msgstr "إنشاء حساب"
+
+#: .\accounts\templates\registration\register.html:44
+msgid "Join Academy and start learning today."
+msgstr "انضم إلى أكاديمية وابدأ التعلم اليوم."
+
+#: .\accounts\templates\registration\register.html:80
+msgid "Already have an account?"
+msgstr "لديك حساب بالفعل؟"

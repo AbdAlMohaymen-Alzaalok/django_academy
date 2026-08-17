@@ -1,0 +1,75 @@
+{% extends 'courses/base.html' %}
+{% load i18n %}
+
+{% block title %}
+    {% translate "Profile | Academy" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+
+    <div class="col-12 col-md-7 col-lg-5">
+
+        <div class="card border-0 shadow-sm">
+
+            <div class="card-body p-4 p-md-5">
+
+                <!-- Header -->
+
+                <div class="text-center mb-4">
+
+                    <div
+                        class="bg-primary bg-opacity-10
+                               text-primary rounded-circle
+                               d-inline-flex align-items-center
+                               justify-content-center mb-3"
+                        style="width: 70px; height: 70px;"
+                    >
+
+                        <i class="bi bi-person-fill fs-2"></i>
+
+                    </div>
+
+                    <h2 class="fw-bold mb-1">
+                        {% translate "My Profile" %}
+                    </h2>
+
+                    <p class="text-muted mb-0">
+                        {% translate "Update your account information." %}
+                    </p>
+
+                </div>
+
+
+                <!-- Profile Form -->
+
+                <form method="post">
+
+                    {% csrf_token %}
+
+                    {{ form.as_p }}
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary w-100 py-2 mt-2"
+                    >
+
+                        <i class="bi bi-check-circle me-2"></i>
+
+                        {% translate "Save Changes" %}
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
