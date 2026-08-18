@@ -78,7 +78,7 @@
                     {% translate "This is a demo payment system. No real money will be charged." %}
                 </p>
 
-
+                {% if user.is_authenticated %}
                 <div class="d-grid gap-2">
 
                     <!-- Successful Payment -->
@@ -121,6 +121,29 @@
                     </form>
 
                 </div>
+                {% else %}
+                <div class="d-grid gap-2">
+
+                    <!-- Successful Payment -->
+                    <form method="POST" action="{% url 'register'  %}">
+
+                        {% csrf_token %}
+
+                        <button
+                            type="submit"
+                            class="btn btn-success w-100"
+                        >
+                            <i class="bi bi-check-circle me-2"></i>
+
+                            {% translate "Create an account" %}
+
+                        </button>
+
+                    </form>
+
+                </div>
+                {% endif %}
+
 
             </div>
 
